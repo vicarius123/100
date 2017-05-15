@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+    <name>MOD_CATERING_NAME</name>
+    <creationDate>2017-04-11</creationDate>
+    <copyright>2017 nOne</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Cristopher Chong</author>
+    <authorEmail>chris@none.ru</authorEmail>
+    <authorUrl>http://none.ru</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>MOD_CATERING_DESCRIPTION</description>
+    
+    <files>
+        <filename module="mod_catering">mod_catering.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="../../languages/modules/mod_catering">
+        
+			<language tag="en-GB">en-GB/en-GB.mod_catering.ini</language>
+			<language tag="en-GB">en-GB/en-GB.mod_catering.sys.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.mod_catering.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.mod_catering.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset 
+                name="content_type" 
+                label="MOD_CATERING_CONTENT_TYPE_TAB_LBL"
+                description="MOD_CATERING_CONTENT_TYPE_TAB_DESC">
+                <field
+                    name="content_type" type="list"
+                    label="MOD_CATERING_CONTENT_TYPE_LBL"
+                    description="MOD_CATERING_CONTENT_TYPE_DESC">
+                    <option value="blank">MOD_CATERING_CUSTOM_CONTENT</option>
+                    <option value="list">MOD_CATERING_LIST</option>
+                    <option value="item">MOD_CATERING_ITEM</option>
+                </field>
+            </fieldset>
+            <fieldset 
+                name="blank_content" 
+                label="MOD_CATERING_CUSTOM_CONTENT_TAB_LBL"
+                description="MOD_CATERING_CUSTOM_CONTENT_TAB_DESC">
+                <field 
+                    name="html_content" type="editor" filter="safehtml"
+                    label="MOD_CATERING_HTML_LBL"
+                    description="MOD_CATERING_HTML_DESC" />
+            </fieldset>
+            <fieldset 
+                name="list_content" 
+                label="MOD_CATERING_LIST_CONTENT_TAB_LBL"
+                description="MOD_CATERING_LIST_CONTENT_TAB_DESC">
+                <field
+                    name="table" type="list"
+                    label="MOD_CATERING_TABLE_LBL"
+                    description="MOD_CATERING_TABLE_DESC">
+                    
+	<option value="#__catering_items">#__catering_items</option>
+	<option value="#__catering_service">#__catering_service</option>
+	<option value="#__catering_cuisine">#__catering_cuisine</option>
+	<option value="#__catering_category">#__catering_category</option>
+	<option value="#__catering_reserve">#__catering_reserve</option>
+	<option value="#__catering_services">#__catering_services</option>
+                </field>
+                <field 
+                    name="field" type="groupedlist" default=""
+                    label="MOD_CATERING_FIELD_LBL"
+                    description="MOD_CATERING_FIELD_DESC">
+                    
+	<group label="#__catering_items">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="name">name</option>
+		<option value="picture">picture</option>
+		<option value="category">category</option>
+		<option value="type">type</option>
+		<option value="price">price</option>
+		<option value="weight">weight</option>
+		<option value="cuisine">cuisine</option>
+	</group>
+	<group label="#__catering_service">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="name">name</option>
+	</group>
+	<group label="#__catering_cuisine">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="name">name</option>
+	</group>
+	<group label="#__catering_category">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="name">name</option>
+		<option value="picture">picture</option>
+	</group>
+	<group label="#__catering_reserve">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+	</group>
+	<group label="#__catering_services">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="name">name</option>
+		<option value="type">type</option>
+		<option value="desc">desc</option>
+	</group>
+                </field>
+                <field 
+                    name="offset" type="text" default="0" filter="uint" class="input-small"
+                    label="MOD_CATERING_OFFSET_LBL"
+                    description="MOD_CATERING_OFFSET_DESC" />
+                <field 
+                    name="limit" type="text" default="10" filter="uint" class="input-small"
+                    label="MOD_CATERING_LIMIT_LBL"
+                    description="MOD_CATERING_LIMIT_DESC" />
+            </fieldset>
+            <fieldset 
+                name="item_content" 
+                label="MOD_CATERING_ITEM_CONTENT_TAB"
+                description="MOD_CATERING_ITEM_CONTENT_TAB_DESC">
+                <field
+                    name="item_table" type="list"
+                    label="MOD_CATERING_TABLE_LBL"
+                    description="MOD_CATERING_TABLE_DESC">
+                    
+	<option value="#__catering_items">#__catering_items</option>
+	<option value="#__catering_service">#__catering_service</option>
+	<option value="#__catering_cuisine">#__catering_cuisine</option>
+	<option value="#__catering_category">#__catering_category</option>
+	<option value="#__catering_reserve">#__catering_reserve</option>
+	<option value="#__catering_services">#__catering_services</option>
+                </field>
+                <field 
+                    name="item_id" type="text" filter="uint" class="input-small"
+                    label="MOD_CATERING_ITEM_ID_LBL"
+                    description="MOD_CATERING_ITEM_ID_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

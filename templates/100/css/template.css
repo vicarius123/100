@@ -1,0 +1,503 @@
+html, body{
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size:16px;
+	font-weight: 400;
+}
+
+.wrapper{
+	max-width:1024px;
+	padding:0 25px;
+	margin: 0 auto;
+}
+.header .wrapper{
+	position:relative;
+}
+.main-header{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+	padding-top: 25px;
+}
+.phone-left{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;	
+}
+#header-menu{
+	list-style-type: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+#header-menu li:first-child{
+    padding-left: 0;	
+}
+#header-menu li:last-child{
+    padding-right: 0;	
+}
+#header-menu li{
+	display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;
+}
+#header-menu a{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+	text-decoration:none !important;
+}
+.main-header .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-middle{
+    display: flex;
+    align-items: center;
+	
+}
+.main-header p{
+	margin:0px;
+}
+.menu-button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 10px 57px;
+    background: #2AA720;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.menu-selector-header{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+.menu-selector-header img{
+	padding-top:30px;
+}
+.slogan-main{
+	margin:0px;
+    font-size: 50px;
+}
+.slogan-down{
+    margin: 0;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.col-sm-2-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+}
+.menu-main-categories {
+    background: #F6F6F6;
+    padding: 40px 0px;
+}
+p.category-title {
+    font-size: 16px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.menu-main-categories .row{
+	padding-bottom:40px;
+}
+.help-selector p{
+    margin: 0;
+    padding-top: 15px;
+    font-size: 16px;
+}
+.our-rojects-slogan {
+    margin: 0;
+    font-size: 36px;
+    font-weight: normal;
+}
+.our-rojects-slogan2:before{
+    content: '';
+    width: 80%;
+    margin: 0 auto;
+    background: #E2E2E2;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+}
+.our-rojects-slogan2 {
+    font-size: 16px;
+    color: #999999;
+    position: relative;
+	margin-top: 10px;
+}
+.our-rojects-slogan2 span{
+    background: #fff;
+    position: relative;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.project-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.project-logos .col-sm-2-5:nth-child(2), .project-logos .col-sm-2-5:nth-child(5){
+	margin-top:10px;
+}
+.footer{
+    background: #E2E2E2;
+}
+.footer p{
+    font-size: 14px;
+    padding-left: 30px;
+    font-weight: normal;
+}
+.footer #header-menu a{
+	color:#333333 !important;
+}
+.menu-selector{
+	color:#333 !important;
+}
+#calendar{
+	text-align: center;
+}
+#calendar .ui-datepicker-calendar th{
+	text-align:center;
+}
+#calendar .ui-datepicker-calendar{
+	width:100%;
+}
+#calendar .ui-datepicker-calendar > tbody > tr > td{
+    font-size: 24px;
+    padding: 15px;
+}
+#calendar .ui-datepicker-calendar > tbody > tr > td.ui-datepicker-current-day > a,#calendar .ui-datepicker-calendar > tbody > tr > td:hover > a{
+	background: #999;
+    color: #fff !important;
+}
+#calendar .ui-datepicker-calendar > tbody > tr > td > a{
+	border: 2px solid #999;
+    border-radius: 150px;
+    height: 58px;
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 0 auto;
+	color:#333 !important;
+	text-decoration:none !important;
+}
+.category-title{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.food-type{
+    margin: 20px 0px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.button-next{
+    color: #fff !important;
+    border: 1px solid #29A71F;
+    padding: 10px 84px;
+    font-size: 16px;
+    background: #29A71F;
+    font-weight: bold;
+    text-transform: uppercase;
+	margin-left: 7px;
+	display: inline-block;
+	min-width:222px;
+}
+.button-back{
+    color: #333333 !important;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    font-size: 16px;
+	text-transform: uppercase;
+    margin-right: 7px;
+	display: inline-block;
+	min-width:222px;
+}
+.food-title{
+	margin:0px;
+	font-size: 16px;
+}
+.inner-category.food-list{
+	background: #F6F6F6;
+}
+#spinner{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 150px;
+    border: 1px solid #E2E2E2;
+    background: #E2E2E2;
+    font-size: 55px;
+    font-weight: bold;
+    pointer-events: none;
+}
+.spinner{
+	position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+.spinner .ui-spinner.ui-corner-all.ui-widget.ui-widget-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner .ui-spinner-button.ui-spinner-down.ui-corner-br{
+	
+	position: absolute;
+    left: 35px;
+    width: 18px;
+    height: 18px;
+    background: url(/images/less.svg) no-repeat;
+    background-size: cover;
+    transform: rotate(90deg);
+	cursor:pointer;
+}
+
+.spinner .ui-spinner-button.ui-spinner-up.ui-corner-tr{
+    position: absolute;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    background: url(/images/more.svg) no-repeat;
+	cursor:pointer;
+}
+.qt-title{
+    margin-top: 40px;
+}
+.banquet-selector.active,.banquet-selector:hover{
+    color: #29A71F  !important;
+    border: 1px solid #29A71F;
+	text-decoration:none !important;
+}
+.banquet-selector{
+    color: #333 !important;
+    display: block;
+    border: 1px solid transparent;
+    padding: 8px 0px;
+    text-decoration: none !important;	
+}
+.separator-right{
+	width:100%;
+	height: 1px;
+	background:#E2E2E2;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.banquet-type a{
+    color: #333 !important;
+    display: block;
+    border: 1px solid transparent;
+    padding: 8px 0px;
+    text-decoration: none !important;	
+}
+.nomargin{
+	margin:0px;
+}
+.banquet-type a.active, .banquet-type a:hover{
+    color: #29A71F !important;
+    border: 1px solid #29A71F;
+	text-decoration:none !important;	
+}
+.order-price{
+	margin-top:10px;
+}
+.order-info-ctn{
+    border: 1px solid #E2E2E2;
+    margin-top: 25px;
+    padding: 15px 20px;
+}
+small{
+	color:#333 !important;
+}
+.preorder-info p{
+	color:#999999;
+	font-size:14px;
+}
+.slogan-main{
+	font-weight:bold;
+}
+.slogan-main p{
+	font-size:40px;
+	font-weight:500;
+}
+.food-pic img {
+    width: 100%;
+    border-radius: 150px;
+}
+.food-pic {
+    width: 160px;
+    margin: 0 auto;
+    border-radius: 150px;
+}
+.popup-item{
+	width:600px;
+}
+.inner-service{
+	width:430px;
+    padding: 0 30px;
+}
+.popup-item .popup-image img{
+	width:400px;
+	height:auto;
+}
+.popup-item .popup-title{
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;	
+}
+.popup-item-desc{
+	font-size:14px;
+	font-weight:400;
+}
+.popup-item-desc i{
+	font-weight:bold;
+}
+.fancybox-skin{
+    background: #F6F6F6;
+	border-radius: 0px;
+    padding: 25px 15px !important;
+}
+a.fancybox-item.fancybox-close {
+    background: url(/images/close.svg)no-repeat;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 16px;
+}
+.popup-ctn{
+	color:#333 !important;
+}
+.selected-menu{
+    padding: 37px 0px;
+	border-bottom:1px solid #E2E2E2;
+}
+.service-pic{
+	width:160px;
+	height:160px;
+	margin:0 auto;
+}
+.service-1 {
+    background: url(/images/service1.svg);
+}
+.service-1:hover,.service-1.active{
+    background: url(/images/service1-active.svg);
+}
+.service-2 {
+    background: url(/images/service2.svg);
+}
+.service-2:hover,.service-2.active {
+    background: url(/images/service2-active.svg);
+}
+.service-3 {
+    background: url(/images/service3.svg);
+}
+.service-3:hover,.service-3.active {
+    background: url(/images/service3-active.svg);
+}
+.service-4 {
+    background: url(/images/service4.svg);
+}
+.service-4:hover,.service-4.active {
+    background: url(/images/service4-active.svg);
+}
+.service-5 {
+    background: url(/images/service5.svg);
+}
+.service-5:hover,.service-5.active {
+    background: url(/images/service5-active.svg);
+}
+.service-6 {
+    background: url(/images/service6.svg);
+}
+.service-6:hover,.service-6.active {
+    background: url(/images/service6-active.svg);
+}
+.each-service .row {
+    padding: 30px 0px;
+}
+.each-service .food-title{
+	text-transform:uppercase;
+	margin-top:15px;
+	font-weight: 500;
+}
+input[type=checkbox].css-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:25px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	font-size:16px;
+	vertical-align:middle;
+	cursor:pointer;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+	border:1px solid #E2E2E2;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background: url(/images/checked.svg) no-repeat center left;
+    border: 1px solid #29A71F;
+    color: #29A71F;
+    background-position-x: 10px;
+}
+label.css-label {
+	background: url(/images/uncheck.svg) no-repeat center left;
+	background-position-x: 10px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.service-buttons .button-cancel{
+    color: #333333 !important;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 7px;
+    display: inline-block;
+    width: 176px;
+}
+.service-buttons .button-save{
+	color: #fff !important;
+    border: 1px solid #29A71F;
+    padding: 10px 0px;
+    font-size: 16px;
+    background: #29A71F;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 7px;
+    display: inline-block;
+    width: 176px;
+}

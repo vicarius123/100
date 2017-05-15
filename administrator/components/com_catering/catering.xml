@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_catering</name>
+    <creationDate>2017-04-11</creationDate>
+    <copyright>2017 nOne</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Cristopher Chong</author>
+    <authorEmail>chris@none.ru</authorEmail>
+    <authorUrl>http://none.ru</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description></description>
+    
+    <scriptfile>script.php</scriptfile>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>catering.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <media destination="com_catering" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages folder="languages/site">
+        
+			<language tag="en-GB">en-GB/en-GB.com_catering.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_catering.ini</language>
+    </languages>
+    <administration>
+        <menu img="media/com_catering/images/s_com_catering.png" >COM_CATERING</menu>
+        <submenu>
+            
+			<menu link="option=com_catering&amp;view=items" view="items" img="media/com_catering/images/s_items.png" alt="Catering/Items">COM_CATERING_TITLE_ITEMS</menu>
+
+			<menu link="option=com_catering&amp;view=__catering_service2024s" view="__catering_service2024s" img="media/com_catering/images/s___catering_service2024s.png" alt="Catering/__catering_service2024s">COM_CATERING_TITLE___CATERING_SERVICE2024S</menu>
+
+			<menu link="option=com_catering&amp;view=cuisines" view="cuisines" img="media/com_catering/images/s_cuisines.png" alt="Catering/Cuisines">COM_CATERING_TITLE_CUISINES</menu>
+
+			<menu link="option=com_catering&amp;view=categories" view="categories" img="media/com_catering/images/s_categories.png" alt="Catering/Categories">COM_CATERING_TITLE_CATEGORIES</menu>
+
+			<menu link="option=com_catering&amp;view=reserves" view="reserves" img="media/com_catering/images/s_reserves.png" alt="Catering/Reserves">COM_CATERING_TITLE_RESERVES</menu>
+
+			<menu link="option=com_catering&amp;view=addservices" view="addservices" img="media/com_catering/images/s_addservices.png" alt="Catering/Addservices">COM_CATERING_TITLE_ADDSERVICES</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>catering.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+            
+			<language tag="en-GB">en-GB/en-GB.com_catering.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_catering.sys.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_catering.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_catering.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="catering"/>
+    </plugins>
+    <modules>
+		<module module="mod_catering" />
+	</modules>
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->

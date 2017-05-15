@@ -1,0 +1,21 @@
+
+<svg width="160px" height="160px" viewBox="500 873 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="160" height="160" rx="80"></rect>
+    </defs>
+    <g id="Bitmap-Copy-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(500.000000, 873.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#29A71F" xlink:href="#path-1"></use>
+        <g id="Group" opacity="1" mask="url(#mask-2)" fill-rule="nonzero" fill="#fff">
+            <g transform="translate(31.000000, 57.000000)" id="Shape">
+                <polygon points="97.8696809 0.0781914894 84.0558511 0.0781914894 77.6441489 9.85212766 83.2218085 9.85212766 83.2218085 48.9478723 92.9957447 48.9478723 92.9957447 9.85212766 97.8696809 9.85212766"></polygon>
+                <polygon points="11.7808511 0.0781914894 0.130319149 0.0781914894 0.130319149 9.85212766 5.03031915 9.85212766 5.03031915 48.9478723 14.8042553 48.9478723 14.8042553 9.85212766 24.7345745 9.85212766"></polygon>
+                <polygon points="19.7042553 0.0781914894 58.9042553 29.5303191 78.2957447 0.0781914894"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

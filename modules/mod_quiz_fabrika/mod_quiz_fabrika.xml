@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+    <name>MOD_QUIZ_FABRIKA_NAME</name>
+    <creationDate>2017-05-10</creationDate>
+    <copyright>2017 Cristopher Chong</copyright>
+    <license>Licencia Pública General GNU versión 2 o posterior. Consulte LICENSE.txt</license>
+    <author>Cristopher Chong</author>
+    <authorEmail>chris@none.ru</authorEmail>
+    <authorUrl>http://none.ru</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>MOD_QUIZ_FABRIKA_DESCRIPTION</description>
+    
+    <files>
+        <filename module="mod_quiz_fabrika">mod_quiz_fabrika.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="../../languages/modules/mod_quiz_fabrika">
+        
+			<language tag="en-GB">en-GB/en-GB.mod_quiz_fabrika.ini</language>
+			<language tag="en-GB">en-GB/en-GB.mod_quiz_fabrika.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset 
+                name="content_type" 
+                label="MOD_QUIZ_FABRIKA_CONTENT_TYPE_TAB_LBL"
+                description="MOD_QUIZ_FABRIKA_CONTENT_TYPE_TAB_DESC">
+                <field
+                    name="content_type" type="list"
+                    label="MOD_QUIZ_FABRIKA_CONTENT_TYPE_LBL"
+                    description="MOD_QUIZ_FABRIKA_CONTENT_TYPE_DESC">
+                    <option value="blank">MOD_QUIZ_FABRIKA_CUSTOM_CONTENT</option>
+                    <option value="list">MOD_QUIZ_FABRIKA_LIST</option>
+                    <option value="item">MOD_QUIZ_FABRIKA_ITEM</option>
+                </field>
+            </fieldset>
+            <fieldset 
+                name="blank_content" 
+                label="MOD_QUIZ_FABRIKA_CUSTOM_CONTENT_TAB_LBL"
+                description="MOD_QUIZ_FABRIKA_CUSTOM_CONTENT_TAB_DESC">
+                <field 
+                    name="html_content" type="editor" filter="safehtml"
+                    label="MOD_QUIZ_FABRIKA_HTML_LBL"
+                    description="MOD_QUIZ_FABRIKA_HTML_DESC" />
+            </fieldset>
+            <fieldset 
+                name="list_content" 
+                label="MOD_QUIZ_FABRIKA_LIST_CONTENT_TAB_LBL"
+                description="MOD_QUIZ_FABRIKA_LIST_CONTENT_TAB_DESC">
+                <field
+                    name="table" type="list"
+                    label="MOD_QUIZ_FABRIKA_TABLE_LBL"
+                    description="MOD_QUIZ_FABRIKA_TABLE_DESC">
+                    
+	<option value="#__quiz_fabrika_questions">#__quiz_fabrika_questions</option>
+                </field>
+                <field 
+                    name="field" type="groupedlist" default=""
+                    label="MOD_QUIZ_FABRIKA_FIELD_LBL"
+                    description="MOD_QUIZ_FABRIKA_FIELD_DESC">
+                    
+	<group label="#__quiz_fabrika_questions">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="question">question</option>
+		<option value="parent">parent</option>
+	</group>
+                </field>
+                <field 
+                    name="offset" type="text" default="0" filter="uint" class="input-small"
+                    label="MOD_QUIZ_FABRIKA_OFFSET_LBL"
+                    description="MOD_QUIZ_FABRIKA_OFFSET_DESC" />
+                <field 
+                    name="limit" type="text" default="10" filter="uint" class="input-small"
+                    label="MOD_QUIZ_FABRIKA_LIMIT_LBL"
+                    description="MOD_QUIZ_FABRIKA_LIMIT_DESC" />
+            </fieldset>
+            <fieldset 
+                name="item_content" 
+                label="MOD_QUIZ_FABRIKA_ITEM_CONTENT_TAB"
+                description="MOD_QUIZ_FABRIKA_ITEM_CONTENT_TAB_DESC">
+                <field
+                    name="item_table" type="list"
+                    label="MOD_QUIZ_FABRIKA_TABLE_LBL"
+                    description="MOD_QUIZ_FABRIKA_TABLE_DESC">
+                    
+	<option value="#__quiz_fabrika_questions">#__quiz_fabrika_questions</option>
+                </field>
+                <field 
+                    name="item_id" type="text" filter="uint" class="input-small"
+                    label="MOD_QUIZ_FABRIKA_ITEM_ID_LBL"
+                    description="MOD_QUIZ_FABRIKA_ITEM_ID_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

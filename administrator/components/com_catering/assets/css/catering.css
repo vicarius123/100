@@ -1,0 +1,83 @@
+.icon-48-items {
+      background-image: url(../images/l_items.png);
+      padding-left:60px!important;
+}
+
+.icon-48-item {
+      background-image: url(../images/l_items.png);
+      padding-left:60px!important;
+}
+
+.color-box-items { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+.icon-48-__catering_service2024s {
+      background-image: url(../images/l___catering_service2024s.png);
+      padding-left:60px!important;
+}
+
+.icon-48-__catering_service2024 {
+      background-image: url(../images/l___catering_service2024s.png);
+      padding-left:60px!important;
+}
+
+.color-box-__catering_service2024s { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+.icon-48-cuisines {
+      background-image: url(../images/l_cuisines.png);
+      padding-left:60px!important;
+}
+
+.icon-48-cuisine {
+      background-image: url(../images/l_cuisines.png);
+      padding-left:60px!important;
+}
+
+.color-box-cuisines { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+.icon-48-categories {
+      background-image: url(../images/l_categories.png);
+      padding-left:60px!important;
+}
+
+.icon-48-category {
+      background-image: url(../images/l_categories.png);
+      padding-left:60px!important;
+}
+
+.color-box-categories { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+.icon-48-reserves {
+      background-image: url(../images/l_reserves.png);
+      padding-left:60px!important;
+}
+
+.icon-48-reserve {
+      background-image: url(../images/l_reserves.png);
+      padding-left:60px!important;
+}
+
+.color-box-reserves { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+.icon-48-addservices {
+      background-image: url(../images/l_addservices.png);
+      padding-left:60px!important;
+}
+
+.icon-48-addservice {
+      background-image: url(../images/l_addservices.png);
+      padding-left:60px!important;
+}
+
+.color-box-addservices { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+
+
+.other-filters{
+    padding: 0 14px;
+}

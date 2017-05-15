@@ -1,0 +1,14 @@
+
+<svg width="18px" height="18px" viewBox="731 544 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+        <circle id="path-1" cx="9" cy="9" r="9"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Group-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(731.000000, 544.000000)">
+        <rect id="Combined-Shape" fill="#29A71F" x="7.9" y="4" width="2.2" height="10"></rect>
+        <use id="Oval" stroke="#29A71F" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+    </g>
+</svg>

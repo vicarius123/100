@@ -1,0 +1,20 @@
+
+<svg width="160px" height="160px" viewBox="267 873 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="160" height="160" rx="80"></rect>
+    </defs>
+    <g id="Bitmap-Copy-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(267.000000, 873.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+        <g id="Group" opacity="0.3" mask="url(#mask-2)" fill-rule="nonzero" fill="#000000">
+            <g transform="translate(35.000000, 35.000000)" id="Shape">
+                <path d="M89.295,69.393 L79.698,71.964 L72.235,44.107 L73.423,43.789 C89.683,39.433 87.329,17.255 72.575,0.449 L59.902,3.845 L47.229,7.241 C42.854,29.172 51.903,49.556 68.163,45.199 L69.351,44.881 L76.814,72.738 L67.217,75.309 L67.922,77.939 L90,72.024 L89.295,69.393 Z"></path>
+                <path d="M30.098,15.457 L17.425,12.061 C2.671,28.867 0.317,51.045 16.577,55.401 L17.765,55.719 L10.302,83.576 L0.705,81.005 L0,83.635 L22.078,89.55 L22.783,86.92 L13.186,84.349 L20.649,56.492 L21.837,56.81 C38.097,61.166 47.146,40.782 42.771,18.851 L30.098,15.457 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
