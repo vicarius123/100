@@ -11,7 +11,11 @@ defined('_JEXEC') or die;
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 
-echo 'wasdasdasd';
-?>
+$items = $this->items;
 
+print_r($items);
+?>
+<form method="POST" action="">
+
+</form>
 
