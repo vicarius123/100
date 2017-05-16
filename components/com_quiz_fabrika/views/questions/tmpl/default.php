@@ -10,19 +10,8 @@
 defined('_JEXEC') or die;
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
-JHtml::_('bootstrap.tooltip');
-JHtml::_('behavior.multiselect');
-JHtml::_('formbehavior.chosen', 'select');
 
-$user       = JFactory::getUser();
-$userId     = $user->get('id');
-$listOrder  = $this->state->get('list.ordering');
-$listDirn   = $this->state->get('list.direction');
-$canCreate  = $user->authorise('core.create', 'com_quiz_fabrika') && file_exists(JPATH_COMPONENT . DIRECTORY_SEPARATOR . 'models' . DIRECTORY_SEPARATOR . 'forms' . DIRECTORY_SEPARATOR . 'questionform.xml');
-$canEdit    = $user->authorise('core.edit', 'com_quiz_fabrika') && file_exists(JPATH_COMPONENT . DIRECTORY_SEPARATOR . 'models' . DIRECTORY_SEPARATOR . 'forms' . DIRECTORY_SEPARATOR . 'questionform.xml');
-$canCheckin = $user->authorise('core.manage', 'com_quiz_fabrika');
-$canChange  = $user->authorise('core.edit.state', 'com_quiz_fabrika');
-$canDelete  = $user->authorise('core.delete', 'com_quiz_fabrika');
+echo 'wasdasdasd';
 ?>
 
 <form action="<?php echo JRoute::_('index.php?option=com_quiz_fabrika&view=questions'); ?>" method="post"
