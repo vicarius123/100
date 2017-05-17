@@ -13,9 +13,51 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 
 $items = $this->items;
 
-print_r($items);
+$model = $this->getModel();
+
+$first = $items[0]->question;
+$first_id = $items[0]->id;
+
+$answers = $model->getQuestion($first_id);
 ?>
-<form method="POST" action="">
+<div class="quiz-start">
+	<form method="POST" action="">
+		<label><?=$first;?></label>
+		<div>
+			<? foreach($answers as $answer):?>
+			<input type="radio" name="answer1" value="<?=$answer->id;?>" /> <span><?=$answer->question;?></span><br>
+			<? endforeach;?>
+		</div>
+		<button class="quiz1">Next</button>
+		<input type="hidden" name="task" value="questions.moreAnswer"/>
+	</form>
+</div>
 
-</form>
 
+<script>
+	jQuery('.quiz1').click(function(e){
+		e.preventDefault();
+		var url = '/index.php?option=com_quiz_fabrika&view=questions&task=questions.moreAnswer';
+		
+		var frm = jQuery('.quiz-start form').serialize();
+		
+		jQuery.ajax({
+		
+			type:'POST',
+			url: url,
+			data: frm,
+			success: function(data){
+			
+				var results = jQuery(data).find('.quiz-next').html();
+				console.log(results);
+				
+				jQuery('.quiz-start').empty().append(results).fadeIn();
+				
+				
+				
+			}
+			
+		});
+	});
+
+</script>

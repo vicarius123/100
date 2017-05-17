@@ -247,4 +247,45 @@ class Quiz_fabrikaModelQuestions extends JModelList
 		$date = str_replace('/', '-', $date);
 		return (date_create($date)) ? JFactory::getDate($date)->format("Y-m-d") : null;
 	}
+	
+	public function getQuestion($id){
+		$db = JFactory::getDbo();
+		$query = "SELECT id,question FROM #__quiz_fabrika_questions WHERE state = 1 AND parent IN($id)";
+		$db->setQuery($query);
+		$results = $db->loadObjectList();
+		
+		return $results;
+	}
+	
+	public function getQuestion2($id){
+		$db = JFactory::getDbo();
+		$query = "SELECT id,question FROM #__quiz_fabrika_questions WHERE state = 1 AND FIND_IN_SET($id, parent)";
+		
+		$db->setQuery($query);
+		$results = $db->loadObjectList();
+		
+		return $results;
+	}
+	
+	public function getQuestion3($id){
+		$db = JFactory::getDbo();
+		$query = "SELECT id,question FROM #__quiz_fabrika_questions WHERE state = 1 AND FIND_IN_SET($id, parent)";
+		
+		$db->setQuery($query);
+		$results = $db->loadObjectList();
+		
+		return $results;
+	}
+	
+	public function finalAnswer($id){
+		$db = JFactory::getDbo();
+		$query = "SELECT t2.name FROM #__quiz_fabrika_questions as t1, #__catering_category as t2 WHERE t1.state = 1 AND t1.id=$id AND t1.answer = t2.id";
+		
+		$db->setQuery($query);
+		$results = $db->loadObjectList();
+		
+		return $results;
+	}
+	
+	
 }
