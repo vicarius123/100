@@ -34,6 +34,9 @@
 					<p class="nomargin">Гостей: 20</p>
 				</div>
 			</div>
+				<div class="col-sm-7">
+				<p>АЛКОГОЛЬ, ТОРТ, МЕБЕЛЬ, ПОДБОР ПЛОЩАДКИ, БОКАЛЫ ПОД СВОЙ АЛКОГОЛЬ, ТЕКСТИЛЬ</p>	
+				</div>
 		</div>
 	</div>
 	<div class="services-ctn">
